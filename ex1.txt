@@ -1,0 +1,35 @@
+ifetcslab@ifetcslab-System-Product-Name:~/Desktop$ nslookup google.com
+Server:		127.0.0.53
+Address:	127.0.0.53#53
+
+Non-authoritative answer:
+Name:	google.com
+Address: 142.250.206.14
+Name:	google.com
+Address: 2404:6800:4007:80f::200e
+
+ifetcslab@ifetcslab-System-Product-Name:~/Desktop$ nslookup -type=ns vulnweb.com
+Server:		127.0.0.53
+Address:	127.0.0.53#53
+
+Non-authoritative answer:
+vulnweb.com	nameserver = ns-557.awsdns-05.net.
+vulnweb.com	nameserver = ns-1450.awsdns-53.org.
+vulnweb.com	nameserver = ns-1588.awsdns-06.co.uk.
+vulnweb.com	nameserver = ns-136.awsdns-17.com.
+
+Authoritative answers can be found from:
+
+ifetcslab@ifetcslab-System-Product-Name:~/Desktop$ nslookup -type=mx vulnweb.com
+Server:		127.0.0.53
+Address:	127.0.0.53#53
+
+Non-authoritative answer:
+vulnweb.com	mail exchanger = 10 alt1.aspmx.l.google.com.
+vulnweb.com	mail exchanger = 10 alt2.aspmx.l.google.com.
+vulnweb.com	mail exchanger = 10 alt4.aspmx.l.google.com.
+vulnweb.com	mail exchanger = 10 alt3.aspmx.l.google.com.
+vulnweb.com	mail exchanger = 10 aspmx.l.google.com.
+
+Authoritative answers can be found from:
+
